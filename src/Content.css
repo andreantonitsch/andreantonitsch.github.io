@@ -2,8 +2,8 @@ section {
     display: block;
     text-align: left;
     margin-bottom: 4em;
-    
-    color:white;
+
+    color: white;
     /* -webkit-text-stroke: 1px black; */
 }
 
@@ -14,9 +14,9 @@ h1 {
 }
 
 .main-content {
-    width: 800px;
+    width: 100%;
     padding-top: 10px;
-    position: fixed;
+    position: relative;
     justify-content: center;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@ h1 {
 
 .introduction {
     margin-top: 0;
-    
+
 }
 
 .introduction .title {
@@ -53,22 +53,93 @@ h1 {
     font-weight: 500;
 }
 
-.item{
-    margin-bottom:2.5em; 
+.item {
+    margin-bottom: 2.5em;
     margin-left: 1.5em;
     font-weight: 400;
     /* font-weight: 600; */
 }
 
-.item .sub-title{
+.item .sub-title {
     text-transform: uppercase;
     margin-top: 0em;
-    margin-bottom:0.5em;
+    margin-bottom: 0.5em;
 }
 
-.list{
+.list {
     margin-left: 0em;
-    
+
     align-items: left;
     text-align: left;
 }
+
+.main-content::-webkit-scrollbar {
+    /* chrome */
+    display: none;
+}
+
+.main-content {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
+    margin-left: 25px;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    
+    position: absolute;
+}
+
+
+.background {
+    background: rgb(243, 224, 80);
+    background: linear-gradient(90deg, rgba(191, 91, 91, 1) 0%, rgba(243, 224, 80, 1) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    overflow: hidden;
+    transform: scale(1.03);
+    filter: blur(5px);
+
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.background::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.rootContent::-webkit-scrollbar {
+    display: none;
+}
+
+.rootContent {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
+    max-width: 100%;
+    width: 30%;
+    height: 100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    position: absolute;
+}
+
