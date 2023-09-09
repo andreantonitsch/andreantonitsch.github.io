@@ -2,19 +2,51 @@ import './Content.css'
 import ButtonLink from './ButtonLink'
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
+import buttonTheme from './buttonTheme.jsx';
+import { styled } from '@mui/material/styles';
 
-function Content() {
+import ToggleButton from '@mui/material/ToggleButton'
+
+import Grid from '@mui/material/Grid';
+
+function Content(props) {
     return <>
-    {/*  border: '5px solid black' } */}
-        <Container maxWidth={false}   className="rootContent" sx={{ maxWidth:"100%"}}>
-            <div  className="background" />
-            <div  className="main-content" >
+        {/*  border: '5px solid black' } */}
+        {/* <Container maxWidth={false}   className="rootContent" sx={{ maxWidth:"100%"}}> */}
+        <Container sx={{height:"100%"}}>
+            <div className="main-content" >
                 <section className="introduction">
                     <h1 className="title">ANDRÉ <b>ANTONITSCH</b></h1>
                     <h2 className="sub-title">COMPUTER SCIENTIST, MSc.</h2>
-                    <p className="summary">Computer scientist living in Plön, Germany.
-                        I have a passion for Computer Graphics and Simulations.
-                        <br />Sometimes you can catch me making some Jams games.</p>
+                    <Grid container direction="row" spacing={3}   justifyContent="left" alignItems="center">
+                        <Grid item>
+                            <p className="summary">Computer scientist living in Plön, Germany.
+                                I have a passion for Computer Graphics and Simulations.
+                                <br />Sometimes you can catch me making some Jams games.</p>
+                            {/* <p>Computer scientist living in Plön, Germany.
+                                I have a passion for Computer Graphics and Simulations.
+                                <br />Sometimes you can catch me making some Jams games.</p> */}
+                        </Grid>
+
+                        <Grid item>
+                            <StyledToggleButton
+                                // style={{ position: 'absolute', top: "10px", right: "10px" }}
+                                value="check"
+                                selected={props.smalluns}
+                                onChange={() => {
+                                    props.setSmalluns(!props.smalluns);
+                                }}
+                            >
+                                {/* <CheckIcon /> */}
+                                Try out a simulation!
+                            </StyledToggleButton>
+                        </Grid>
+
+
+
+                    </Grid>
+
+
                 </section>
 
 
@@ -91,3 +123,6 @@ function Content() {
 }
 
 export default Content
+
+const StyledToggleButton = styled(ToggleButton)(buttonTheme)
+
