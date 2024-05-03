@@ -23,13 +23,23 @@ const  buttonTheme = ({ theme }) => ({
         borderWidth : 2,
         borderColor:"#ffffff",
     },
-    '&:check': {
+    
+    '&.Mui-selected': {
         backgroundColor: "#ffffff",
-        color: "black",
-      //   color: "white",
+         color: "black",
+       //  color: "white",
           borderRadius : 0,
           borderWidth : 2,
           borderColor:"#ffffff",
+      },
+      '&.Mui-selected:hover': {
+        backgroundColor: "#ffffff",
+         color: "white",
+       //  color: "white",
+          borderRadius : 0,
+          borderWidth : 2,
+          borderColor:"white",
+          backgroundColor: "#14121700",
       },
   })
 

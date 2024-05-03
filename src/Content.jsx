@@ -54,14 +54,14 @@ function Content(props) {
                     <h1 className="title">CONTACT / INFO</h1>
                     <Stack spacing={2} direction="row" useFlexGap flexWrap="wrap">
                         <ButtonLink
-                            link={""}
+                            link={"https://github.com/andreantonitsch/portfolio-website/blob/main/Assets/AndreAntonitsch_CV.pdf"}
                             text={"CV"} />
                         <ButtonLink
                             link={"https://github.com/andreantonitsch"}
                             text={"GITHUB"} />
-                        <ButtonLink
+                        {/* <ButtonLink
                             link={"https://twitter.com/AndreAntonitsch"}
-                            text={"TWITTER"} />
+                            text={"TWITTER"} /> */}
                         <ButtonLink
                             link={"https://www.linkedin.com/in/andreantonitsch/"}
                             text={"LINKEDIN"} />
@@ -75,20 +75,11 @@ function Content(props) {
                     <h1 className="title">PORTFOLIO</h1>
                     <Stack spacing={4} >
                         <div className="item">
-                            <h3 className="sub-title">RESEARCH</h3>
-
+                            <h3 className="sub-title">PERSONAL PROJECTS</h3>
                             <Stack spacing={2} direction="row" useFlexGap flexWrap="wrap">
                                 <ButtonLink
-                                    link={""}
-                                    text={"LEGION"} />
-                                <ButtonLink
-                                    link={""}
-                                    text={"BioClouds"} />
-                            </Stack>
-                        </div>
-                        <div className="item">
-                            <h3 className="sub-title">Unity Code Samples</h3>
-                            <Stack spacing={2} direction="row" useFlexGap flexWrap="wrap">
+                                    link={"https://github.com/andreantonitsch/boitata-deferred-renderer"}
+                                    text={"Vulkan Renderer"} />
                                 <ButtonLink
                                     link={"https://github.com/andreantonitsch/bulletml-techdemo"}
                                     text={"BulletML"} />
@@ -112,6 +103,18 @@ function Content(props) {
                                 <ButtonLink
                                     link={"https://mekasasquatch.itch.io"}
                                     text={"Jam Games"} />
+                            </Stack>
+                        </div>
+                        <div className="item">
+                            <h3 className="sub-title">RESEARCH</h3>
+
+                            <Stack spacing={2} direction="row" useFlexGap flexWrap="wrap">
+                                <ButtonLink
+                                    link={"https://ieeexplore.ieee.org/document/9266020"}
+                                    text={"LEGION"} />
+                                <ButtonLink
+                                    link={"https://www.researchgate.net/publication/333716721_BioClouds_A_Multi-level_Model_to_Simulate_and_Visualize_Large_Crowds"}
+                                    text={"BioClouds"} />
                             </Stack>
                         </div>
                     </Stack>

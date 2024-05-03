@@ -96,7 +96,7 @@ h1 {
 
 
  #root {
-     background: linear-gradient(90deg, rgba(191, 91, 91, 1) 0%, rgba(243, 224, 80, 1) 100%);
+     background: linear-gradient(90deg, rgb(27, 16, 41) 0%, rgb(58, 53, 64) 100%);
 
     -ms-overflow-style: none;
     scrollbar-width: none;

@@ -16,8 +16,10 @@ function App() {
 
           {collapsed && <Grid item xs={8}>
             {/* <iframe style={{height: "100%", width:"100%", border :"0px"}} src={"https://andreantonitsch.github.io/portfolio-simulation3js/"} /> */}
+            {/* <iframe style={{height: "100vh", width:"100%", border :"0px", backgroundColor:"rgba(209, 136, 87, 1)"}}
+             src={"http://localhost:5174/portfolio-simulation3js/"} /> */}
             <iframe style={{height: "100vh", width:"100%", border :"0px", backgroundColor:"rgba(209, 136, 87, 1)"}}
-             src={"http://localhost:5174/portfolio-simulation3js/"} />
+             src={"https://andreantonitsch.github.io/portfolio-simulation3js/"} />
 
           </Grid>}
         </Grid>
