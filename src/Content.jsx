@@ -1,4 +1,5 @@
 import './Content.css'
+import Bio_crowds from './images/lanes.gif'
 import ButtonLink from './ButtonLink'
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
@@ -27,7 +28,7 @@ function Content(props) {
                                 I have a passion for Computer Graphics and Simulations.
                                 <br />Sometimes you can catch me making some Jams games.</p> */}
                         </Grid>
-
+{/* 
                         <Grid item>
                             <StyledToggleButton
                                 // style={{ position: 'absolute', top: "10px", right: "10px" }}
@@ -37,11 +38,11 @@ function Content(props) {
                                     props.setSmalluns(!props.smalluns);
                                 }}
                             >
-                                {/* <CheckIcon /> */}
+                                {}
                                 Try out a simulation!
                             </StyledToggleButton>
-                        </Grid>
-
+//                        </Grid>
+ */}
 
 
                     </Grid>
@@ -66,7 +67,7 @@ function Content(props) {
                             link={"https://www.linkedin.com/in/andreantonitsch/"}
                             text={"LINKEDIN"} />
                         <ButtonLink
-                            link={"mailto:andre.antonitsch@acad.pucrs.br"}
+                            link={"mailto:andre.antonitsch@edu.pucrs.br"}
                             text={"E-MAIL"} />
                     </Stack>
                 </section>
@@ -111,10 +112,19 @@ function Content(props) {
                             <Stack spacing={2} direction="row" useFlexGap flexWrap="wrap">
                                 <ButtonLink
                                     link={"https://ieeexplore.ieee.org/document/9266020"}
-                                    text={"LEGION"} />
+                                    text={"LEGION"} 
+                                />
                                 <ButtonLink
                                     link={"https://www.researchgate.net/publication/333716721_BioClouds_A_Multi-level_Model_to_Simulate_and_Visualize_Large_Crowds"}
-                                    text={"BioClouds"} />
+                                    text={"BioClouds"} 
+                                    tooltip={
+                                        <>
+                                            <>BioCrowds is a crowd simulation model based on colonization of space by simulated agents.
+                                            In this project, I implemented a parallel version of that algorithm as a Unity3D module.
+                                            More details in the repository</>
+                                            <img src={Bio_crowds} alt="lanes" width={800} height={"auto"} />
+                                        </>
+                                    }/>
                             </Stack>
                         </div>
                     </Stack>
