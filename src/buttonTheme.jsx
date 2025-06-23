@@ -11,7 +11,7 @@ const  buttonTheme = ({ theme }) => ({
     borderRadius : 0,
     borderWidth : 2,
     borderColor:"#ffffff",
-
+    textWrap : "pretty",
     textJustify:"center",
     alignItems: "center",
 

@@ -89,7 +89,15 @@ function Content(props) {
                                     text={"Boids"} />
                                 <ButtonLink
                                     link={"https://github.com/andreantonitsch/biocrowds-techdemo"}
-                                    text={"BioCrowds"} />
+                                    text={"BioCrowds"} 
+                                    tooltip={
+                                        <>
+                                            BioCrowds is a crowd simulation model based on colonization of space by simulated agents.<br/>
+                                            In this project, I implemented a parallel version of that algorithm as a Unity3D module.<br/>
+                                            More details in the repository<br/>
+                                            <img src={Bio_crowds} alt="lanes" width={600} height={"auto"} />
+                                        </>
+                                    }/>
                             </Stack>
                         </div>
                         <div className="item">
@@ -117,14 +125,7 @@ function Content(props) {
                                 <ButtonLink
                                     link={"https://www.researchgate.net/publication/333716721_BioClouds_A_Multi-level_Model_to_Simulate_and_Visualize_Large_Crowds"}
                                     text={"BioClouds"} 
-                                    tooltip={
-                                        <>
-                                            <>BioCrowds is a crowd simulation model based on colonization of space by simulated agents.
-                                            In this project, I implemented a parallel version of that algorithm as a Unity3D module.
-                                            More details in the repository</>
-                                            <img src={Bio_crowds} alt="lanes" width={800} height={"auto"} />
-                                        </>
-                                    }/>
+                                    />
                             </Stack>
                         </div>
                     </Stack>
