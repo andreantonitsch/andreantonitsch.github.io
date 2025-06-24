@@ -17,8 +17,8 @@ const  tooltipTheme = ({ theme }) => ({
         borderColor:"#ffffff",
         //textAlign : "center",
         textJustify:"center",
-        alignItems: "",
-        maxWidth : 600,
+        alignItems: "center",
+        maxWidth : 900,
         minWidth : 200,
         width : "fit-content"
     },

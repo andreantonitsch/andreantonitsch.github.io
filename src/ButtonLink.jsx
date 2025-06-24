@@ -14,7 +14,7 @@ const StyledTooltip = styled(({ className, ...props }) => (
 function ButtonLink(props) {
 
     return <>
-    <StyledTooltip componentsProps={tooltipTheme} title={props.tooltip} className="tooltip" >
+    <StyledTooltip componentsProps={tooltipTheme} title={props.tooltip} className="tooltip" sx={{widht:"fit-content"}}>
 
         <LinkButton variant="outlined" href={props.link} className="button">{props.text}</LinkButton>
 

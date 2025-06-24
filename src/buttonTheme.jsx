@@ -11,10 +11,11 @@ const  buttonTheme = ({ theme }) => ({
     borderRadius : 0,
     borderWidth : 2,
     borderColor:"#ffffff",
-    textWrap : "pretty",
     textJustify:"center",
     alignItems: "center",
-
+    display: "block",
+    height: "fit-content",
+    
     '&:hover': {
       backgroundColor: "#ffffff",
       color: "black",
